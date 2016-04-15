@@ -1,13 +1,13 @@
 $(document).ready(function() {
 	for (var number = 1; number < 100; number++) {
-		if (number%3 == 0) {
+		if (number%5 == 0 && number%3 == 0) {
+			document.write('fizz buzz' + '<br>');
+		}
+		else if (number%3 == 0) {
 			document.write('fizz' + '<br>');
 		}
 		else if (number%5 == 0) {
 			document.write('buzz' + '<br>');
-		}
-		else if (number%5 == 0 && number%3 == 0) {
-			document.write('fizz buzz' + '<br>');
 		}
 		else {
 		document.write(number + '<br>');
