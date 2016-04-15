@@ -1,6 +1,19 @@
-for (var number = 1; number < 100; number++) {
-	document.write(number + '<br>');
-}
+$(document).ready(function() {
+	for (var number = 1; number < 100; number++) {
+		if (number%3 = 0) {
+			document.write('fizz' + '<br>');
+		}
+		else if (number%5 = 0) {
+			document.write('buzz' + '<br>');
+		}
+		else if (number%5 = 0 && number%3 =0) {
+			document.write('fizzbuzz' + '<br>');
+		}
+		else {
+		document.write(number + '<br>');
+		}
+	}
+});
 
 
  // -- Assignment --//
@@ -12,3 +25,4 @@ for (var number = 1; number < 100; number++) {
 // 1, 2, fizz, 4, buzz, fizz, 7,8,fizz, buzz, 11, fizz, 13, 14, fizz buzz
 
  // ------- //
+
